@@ -1,0 +1,2 @@
+cd C:\Users\91869\eclipse-workspace\com.CucumberOneCommerce
+mvn clean install
