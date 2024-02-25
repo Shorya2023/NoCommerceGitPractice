@@ -45,6 +45,9 @@ public class TestContext {
 		
 		System.out.println("level 1 updated from user 2");
 		System.out.println("user 3 has been updated from git hub");
+		System.out.println("user 1 has been updated from git local to branch 'suer1_branch'");
+
+		
 	}
 
 	
