@@ -1,0 +1,22 @@
+{   "//CommentS" : "Locators Common Side Sub Menus under Dashboard",
+  
+  
+    "link_Customers_xpath" : "//a[@href='#']//p[contains(text(),'Customers')]",
+    "link_SubMenuCustomers_xpath" : "//a[@href='#']//p[contains(text(),'Customers')]//following::p[1]",
+    "btn_Add_new_xpath" : "//a[@href='/Admin/Customer/Create']",
+	 "input_Email_id":["Email","newasf@yahoo.com"],
+	 "input_Firstname_id" : ["FirstName","john"],
+	 "input_Lastname_id" : ["LastName","nones"],
+	 "input_password_id" : ["Password","welcome123"],
+	 "radio_Male" : "//input[@value='M']",
+	 "radio_Female" : "//input[@value='F']",
+	 "input_DateOfBirth_id" : ["DateOfBirth","5/14/2013"],
+	 "input_Company_id" : ["Company","ITC"],
+	 "CustRoles_list_xpath" : ["//input[@aria-labelledby='SelectedCustomerRoleIds_label']"],
+	 "news_list_dropdwn_xpath" : "//input[@aria-labelledby='SelectedNewsletterSubscriptionStoreIds_label']",
+	"input_admincomment_id" : ["AdminComment","adminguy"],
+	"btn_Savebtn_name" : "save",
+	"text_confrmsg_xpath" : "//div[@class='alert alert-success alert-dismissable']"
+    
+}
+

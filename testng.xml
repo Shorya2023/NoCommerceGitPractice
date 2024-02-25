@@ -1,0 +1,8 @@
+<suite name="Cucumber test" >
+  <test  name="Cucmber TestwithTestng">		
+ 				<classes>
+					 <class name="TestRunner.TestRunnerWithTestng"></class>
+				 </classes> 
+  
+  </test> 
+</suite>
