@@ -94,6 +94,22 @@ public void Open_Browser(){
 		context.log(locatorkey+"______Value set on"+values[1]+ "______________text filed.........");
 	}
 	
+	public void TypeInTextFieldAdd(String locatorkey)
+	{
+		System.out.println("IN"+locatorkey+" input box");
+		String values[]=TestContext.getJsonArraysValuesForKey(locatorkey);
+		FindWebElement(locatorkey).clear();
+		double num=RandomNumber();
+		FindWebElement(locatorkey).sendKeys(num+values[1].trim());
+		context.log(locatorkey+"______Value set on"+values[1]+ "______________text filed.........");
+	}
+
+	public double RandomNumber()
+	{
+        double dblrandom = Math.random();
+		return dblrandom;
+	}
+	
 	
 	//javascriptexecuter to check page is loaded or not
 	

@@ -59,7 +59,7 @@ public class Steps {
 	public void User_able_to_login_successfully_and_verify_home_page_title() throws InterruptedException 
 	{
 		Thread.sleep(9000);
-		loginpage.verifyPagetitle(TestContext.getJsonValueForKey("Page_Title_text"));
+		loginpage.verifyPagetitle();
 	}
 
 	

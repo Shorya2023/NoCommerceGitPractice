@@ -164,7 +164,7 @@
     			<version>3.2.5</version>
 			    <configuration>
 					<suiteXmlFiles>
-						<suiteXmlFiles>C:\Users\91869\eclipse-workspace\com.CucumberOneCommerce\testng.xml</suiteXmlFiles>			
+						<suiteXmlFiles>C:\Users\91869\LocalProjectRepo\GITCucumberOneCommerce\testng.xml</suiteXmlFiles>			
 					</suiteXmlFiles>
 			    </configuration>
 			</plugin>	

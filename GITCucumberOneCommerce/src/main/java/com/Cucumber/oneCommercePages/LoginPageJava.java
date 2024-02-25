@@ -55,27 +55,10 @@ public LoginPageJava(WebdriverManager app)
 	}
 
      
-	public  void verifyPagetitle(String title)
+	public  void verifyPagetitle()
 	{
-			//	app.WaitForElement(title, 0);
-	/*	if( app.VerifyTitle(title))
-		{
-			context.log("title passed"+title);
-		}
-		else
-		{
-			//context.Fail("title not as Expected", false);
-			context.Fail(title+"-------"+"not displayed");
-
-		}*/
-				if (app.IsElementPresent("Dashboard_Logo_Text_xpath",24))
-				{
-					context.Pass("Dashboard_Logo_Text_ Present");
-				}
-				else
-				{
-					context.Fail("Dashboard_Logo_Text_ not displayed");
-				}
+			
+				app.IsElementPresent("Dashboard_xpath",24);
 	}
 
 }

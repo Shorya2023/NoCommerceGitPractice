@@ -52,7 +52,7 @@ public class CustomerPagejava {
 	
 	public void EnterCustomerDetails( )
 	{
-		app.TypeInTextField("input_Email_id");
+		app.TypeInTextFieldAdd("input_Email_id");
 		app.TypeInTextField("input_Firstname_id");
 		app.TypeInTextField("input_Lastname_id");
 		app.TypeInTextField("input_password_id");

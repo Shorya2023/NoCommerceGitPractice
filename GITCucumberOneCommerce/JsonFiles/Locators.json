@@ -16,7 +16,7 @@
    
     "link_Customers_xpath" : ["//a[@href='#']//p[contains(text(),'Customers')]","Customer"],
     "link_SubMenuCustomers_xpath" : [ "//a[@href='#']//p[contains(text(),'Customers')]//following::p[1]","Customers_Submenu"],
-    "Dashboard_Logo_Text_xpath" : ["//div[@class='content-header']","Dashboard"],
+    "Dashboard_xpath" : ["//a[@class='nav-link active']","Dashboard"],
     "btn_Add_new_xpath" : [ "//a[@href='/Admin/Customer/Create']","Add_new BUtton"],
 	 "input_Email_id":["Email","newasf@yahoo.com"],
 	 "input_Firstname_id" : ["FirstName","john"],

@@ -37,7 +37,7 @@ public class TestContext {
     public ExtentSparkReporter sparkreport;
     public SoftAssert softAssert;
 
-	public String Report_path="C:\\Users\\91869\\eclipse-workspace\\com.CucumberOneCommerce\\Execution_Reports";
+	public String Report_path="C:\\Users\\91869\\LocalProjectRepo\\GITCucumberOneCommerce\\Execution_Reports";
 
 	public TestContext()
 	{		
