@@ -3,6 +3,7 @@ package com.CucmberOneCommerce.Steps;
 
 import com.Cucumber.oneCommercePages.CustomerPagejava;
 import com.Cucumber.oneCommercePages.LoginPageJava;
+import com.Cucumber.oneCommercePages.SystemPage;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -13,13 +14,15 @@ public class Steps {
 	public TestContext context;
 	public LoginPageJava loginpage;
 	public CustomerPagejava customerpage;
-
+    public SystemPage systempage;
 	
-	public Steps(TestContext context,LoginPageJava loginpage, CustomerPagejava customerpage)
+	public Steps(TestContext context,LoginPageJava loginpage, CustomerPagejava customerpage,SystemPage systempage )
 	{
 		 this.context=context;
 		 this.loginpage=loginpage;
 		 this.customerpage=customerpage;
+		 this.systempage=systempage;
+
 		System.out.println("Steps Construtor");
 	}
 	//************************data values from files********************************
@@ -117,6 +120,10 @@ public class Steps {
 		customerpage.Customer_Confirmation_message();
 		context.log("confirm message displayed menu");
 	}
+	
+	//System page info
+	
+	
 
 	
 	@Then("Close the browser")

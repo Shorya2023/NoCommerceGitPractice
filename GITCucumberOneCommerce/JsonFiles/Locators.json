@@ -30,5 +30,16 @@
 	 "news_list_dropdwn_xpath" : "//input[@aria-labelledby='SelectedNewsletterSubscriptionStoreIds_label']",
 	"input_admincomment_id" : ["AdminComment","adminguy"],
 	"btn_Savebtn_xpath" : ["//button[@name='save']","Save button"],
-	"text_confrmsg_xpath" : ["//div[@class='alert alert-success alert-dismissable']","confirm_message"]
+	"text_confrmsg_xpath" : ["//div[@class='alert alert-success alert-dismissable']","confirm_message"],
+
+
+        "//************System" : "LOCATORS FOR System PAGE",
+      "link_System_xpath" : ["//a[@href='#']//p[contains(text(),'System')]","system"],
+    "link_SubMenuSystem_xpath" : [ "//a[@href='#']//p[contains(text(),'System')]//following::p[1]","System_information"],
+     "Text_serverlocaltime_xpath" : ["//div[@class='label-wrapper']//following::label[@for='ServerLocalTime']", "server local time"]  
+        
+        
+        
+    
+
 }
