@@ -12,9 +12,8 @@ Feature: System functionality
 
   Scenario: verify server local time inside system page
     When User clicks on System Menu
-    And 	Click on System SubMenu Item
-    When 	User click on save button
-    Then 	User can see server local time"
+    When 	Click on System SubMenu Item
+    Then 	Verify server local time todays date
     And 	Close the browser
     
     

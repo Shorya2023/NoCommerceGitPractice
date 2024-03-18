@@ -16,24 +16,25 @@ public class SystemPage {
 
 
 	//click on system 	
-	public void clickOnSystemLink(String locator)
+	public void clickOnSystemLink()
 	{
-		System.out.println("customer menu ----"+locator);
-		app.Click(locator);
+		System.out.println("System menu ----");
+		app.Click("link_System_xpath");
 	}
 	
 	//click on systeminformation submenus
-	public void clickONSubmenu(String locator)
+	public void clickONSubmenu()
 	{
-		System.out.println("systeinfo......"+ locator);
-		app.Click(locator);
+		System.out.println("systeinfo......");
+		app.Click("link_SubMenuSystem_xpath");
 	}
 	
-	public verify_Todaysdate(string locator)
 	
+	public void verify_ServerInfo()
 	{
-		
-		app.validate
+		String TodaysDate= app.getTodaysDate();
+		app.validateDateExists("Todays_servertime_xpath",TodaysDate);
+			
 	}
 	
 	

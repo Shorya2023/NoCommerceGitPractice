@@ -1,6 +1,8 @@
 package WebDriverManager;
 
 import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -226,6 +228,49 @@ public void Open_Browser(){
     	}   	
     }
     
+    
+   //get text from the application 
+   public String getText(String locator)
+      {
+			String textfromapp = null;
+	
+	    	 if (IsElementPresent(locator, 16))
+				    {		 
+					    textfromapp= FindWebElement(locator).getText();
+				     }
+			return textfromapp;
+	   }
+   
+   // todays date and time 
+     public String getTodaysDate()
+     {
+    	    LocalDateTime myDateObj = LocalDateTime.now();  
+    	    System.out.println("Before Formatting: " + myDateObj);  
+    	    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("E, MMM dd yyyy HH:mm:ss");   	    
+    	    String formattedDate = myDateObj.format(myFormatObj);  
+    	    System.out.println("After Formatting: " + formattedDate);  
+    	   return formattedDate;
+     }
+   
+   
+   //****validate Text in application
+    public void  validateText(String locator, String expectedtext )
+    {    	
+    	if (expectedtext.equalsIgnoreCase(getText(locator)))
+    			{
+    				context.log(expectedtext+"-Text exists in the application");
+    			}	
+    	}
+    
+    //date exists or not 
+    public void  validateDateExists(String locator, String expectedtext )
+    {    	
+    	if (expectedtext.contains(getText(locator)))
+    			{
+    				context.log(expectedtext+"-Text exists in the application");
+    			}	
+    	}
+
     
    //validating element is present or not 
     public boolean IsElementPresent(String locator, int DurationinSeconds)

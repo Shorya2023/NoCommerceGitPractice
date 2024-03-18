@@ -123,7 +123,24 @@ public class Steps {
 	
 	//System page info
 	
+	@When("User clicks on System Menu")
+	public void user_clicks_on_system_menu() {
+		systempage.clickOnSystemLink();	
+	}
+
 	
+	@When("Click on System SubMenu Item")
+	public void click_on_system_sub_menu_item() {
+		systempage.clickONSubmenu();	
+	}
+
+	
+	@Then("Verify server local time todays date")
+	public void verify_server_local_time_todays_date() {
+	systempage.verify_ServerInfo();
+	}
+
+
 
 	
 	@Then("Close the browser")

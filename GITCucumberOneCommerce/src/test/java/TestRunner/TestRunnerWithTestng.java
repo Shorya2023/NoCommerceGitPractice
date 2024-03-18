@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions
 (
-		features="C:\\Users\\91869\\LocalProjectRepo\\GITCucumberOneCommerce\\src\\test\\resources\\Features\\Customer.feature",
+		features={"src\\test\\resources\\Features\\System.feature"},
 		glue="com.CucmberOneCommerce.Steps",
 		monochrome=true,
 		dryRun=false,

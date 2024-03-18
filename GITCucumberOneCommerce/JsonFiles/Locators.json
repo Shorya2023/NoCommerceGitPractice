@@ -36,8 +36,8 @@
         "//************System" : "LOCATORS FOR System PAGE",
       "link_System_xpath" : ["//a[@href='#']//p[contains(text(),'System')]","system"],
     "link_SubMenuSystem_xpath" : [ "//a[@href='#']//p[contains(text(),'System')]//following::p[1]","System_information"],
-     "Text_serverlocaltime_xpath" : ["//div[@class='label-wrapper']//following::label[@for='ServerLocalTime']", "server local time"]  
-        
+     "Text_serverlocaltime_xpath" : ["//div[@class='label-wrapper']//following::label[@for='ServerLocalTime']", "server local time"],  
+     "Todays_servertime_xpath" : ["//label[@for='ServerLocalTime']/following::div[3]" , "sever Time"]  
         
         
     
